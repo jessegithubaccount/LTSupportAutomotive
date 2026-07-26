@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "13.0"
   s.requires_arc = true
 
-  s.source_files = ["LTSupportAutomotive/*.{h,m}"]
-  s.resources = ['LTSupportAutomotive/**/*.{strings,lproj}']
-  s.resource_bundle = { 'LTSupportAutomotive' => [ 'LTSupportAutomotive/**/*.lproj' ] }
+  s.source_files = ["Sources/LTSupportAutomotive/*.{h,m}"]
+  s.resources = ['Sources/LTSupportAutomotive/**/*.{strings,lproj}']
+  s.resource_bundle = { 'LTSupportAutomotive' => [ 'Sources/LTSupportAutomotive/**/*.lproj' ] }
   s.frameworks = 'Foundation', 'CoreBluetooth'
 end
 
