@@ -636,13 +636,6 @@ NSString* const LTOBD2AdapterDidReceive = @"LTOBD2AdapterDidReceive";
         return;
     }
     
-    if ( internalCommand.command.class == LTOBD2DummyCommand.class )
-    {
-        [_commandQueue removeObject:internalCommand];
-        internalCommand.responseHandler( internalCommand.command );
-        return;
-    }
-    
     _receiveBuffer = [NSMutableData data];
     _hasPendingAnswer = YES;
     if ( [self sendCommand:internalCommand.command] )
