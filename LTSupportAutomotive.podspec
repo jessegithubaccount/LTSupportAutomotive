@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "LTSupportAutomotive"
-  s.version          = "1.0"
+  s.version          = "1.0.1-fork"
   s.summary          = "LTSupportAutomotive is a library for writing apps that communicate with vehicles using OBD2 adapters."
   s.homepage         = "https://github.com/mickeyl/LTSupportAutomotive"
   s.license          = { :type => "MIT" }
   s.authors          = { "Dr. Michael Lauer" => "mickey@vanille.de" }
-  s.source           = { :git => "https://github.com/mickeyl/LTSupportAutomotive.git", :tag => "1.0.0" }
+  s.source           = { :git => "https://github.com/jessegithubaccount/LTSupportAutomotive.git", :tag => s.version }
 
   s.platform     = :ios, "13.0"
   s.requires_arc = true
