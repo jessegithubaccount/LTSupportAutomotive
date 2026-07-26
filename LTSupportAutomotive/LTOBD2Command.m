@@ -185,12 +185,3 @@
 }
 
 @end
-
-@implementation LTOBD2DummyCommand
-
-+(instancetype)dummyCommand
-{
-    return [[self alloc] initWithRawString:@""];
-}
-
-@end
